@@ -4,9 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale= 0.4">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Italianno|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
   <div class="title" style="width: 100%; height: 100px; margin: 0 auto;">
@@ -171,6 +174,35 @@ li a{
    transition:200ms;
    z-index:2;
 }
+
+.mockup-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel{
+      position: absolute;
+      height: 600px;
+      perspective: 1500px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin-top: 1500px ;
+
+    }
+
+    .carousel .carousel-item{
+      width: 600px;
+    }
+
+    .carousel .carousel-item img{
+      
+      transform: translateX(8px) translateY(-100px);
+    }
+
+
 </style>
 
 <script>
@@ -214,6 +246,10 @@ function cls() {
    fulscr.style.display = "none"
    },102)
 }
+
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });
 </script>
   </head>
  <body>
@@ -248,69 +284,48 @@ function cls() {
     You can call her the Surinamese version of  the Tomorrowland event. 
   </h3><br><br>
 </div>
-
-<div class="intro">
-            <h2 class="text-center header">Photo Gallery</h2>
-            <p>Welcome to my photo gallery. Some pictures were taken with an old Android phone years ago. Others are Iphone pictures taken quite recently. Enjoy!</p> </div>
-
-<div class="container" style="padding-bottom: 10%">
-      <div id="logoCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators black">
-          <li data-target="#logoCarousel" data-slide-to="1" class="active"></li>
-          <li data-target="#logoCarousel" data-slide-to="2"></li>
-          <li data-target="#logoCarousel" data-slide-to="3"></li>
-          <li data-target="#logoCarousel" data-slide-to="4"></li>
-          <li data-target="#logoCarousel" data-slide-to="5"></li>
-          <li data-target="#logoCarousel" data-slide-to="6"></li>
-        </ol>
-        <div class="carousel-inner">
-            <!--first picture-->          
-            <div class="item active">
-            <img src="https://i.postimg.cc/kggvYVZX/1e5cf1d1d96d056b4699838fe8ccba7d.jpg https://i.postimg.cc/cL7CyrGP/inheemse-kinderen.jpg" width="100%" style="padding-top: 10%">
-            <div class="carousel-caption">
-            </div>
-          </div>
-    <!--additional pictures-->
-          <div class="item">
-            <img src="https://i.postimg.cc/NfBf8QH4/Eb0-Wcl0-WAAASYt-S.jpg" width="100%" style="padding-top: 10%">
-            <div class="carousel-caption">
-            </div>
-          </div>
-                    <div class="item">
-            <img src="https://i.postimg.cc/yxBBTTkd/2e48c6d30ad199c9ea127458f8f4a352.jpg" width="100%"  style="padding-top: 10%">
-            <div class="carousel-caption">
-            </div>
-          </div>
-                    <div class="item">
-            <img src="https://i.postimg.cc/5Ns1wL14/1c96d9e2884b965509e5f237db4641d5.jpg" width="100%" style="padding-top: 10%">
-            <div class="carousel-caption">
-            </div>
-          </div>
-                    <div class="item">
-            <img src="https://i.postimg.cc/jj7b01f2/1381636-1425795504300182-1926839925-n.jpg" width="100%" style="padding-top: 10%">
-            <div class="carousel-caption">
-            </div>
-                      <div class="item">
-            <img src="https://i.postimg.cc/cL7CyrGP/inheemse-kinderen.jpg" width="100%" style="padding-top: 10%">
-            <div class="carousel-caption">
-            </div>
-          </div>
-        <a class="left carousel-control" href="#logoCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#logoCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
-    </div>
-
-<div class="new">
     
-    <h4>
+  <div class="mockup-container">
+      <h4>
       <p align="center"><u><i>(photos of etnic groups)</i></u>
       </p>
       </h4><br>
+
+<div class="carousel">
+  <div class="carousel-item">
+
+    <img src="https://i.postimg.cc/cL7CyrGP/inheemse-kinderen.jpg">
+
   </div>
+  <div class="carousel-item">
+
+    <img src="https://i.postimg.cc/NfBf8QH4/Eb0-Wcl0-WAAASYt-S.jpg">
+
+  </div>
+  <div class="carousel-item">
+
+    <img src="https://i.postimg.cc/yxBBTTkd/2e48c6d30ad199c9ea127458f8f4a352.jpg">
+
+  </div>
+  <div class="carousel-item">
+
+    <img src="https://i.postimg.cc/5Ns1wL14/1c96d9e2884b965509e5f237db4641d5.jpg">
+
+  </div>
+  <div class="carousel-item">
+
+    <img src="https://i.postimg.cc/jj7b01f2/1381636-1425795504300182-1926839925-n.jpg">
+
+  </div>
+  <div class="carousel-item">
+
+    <img src="https://i.postimg.cc/kggvYVZX/1e5cf1d1d96d056b4699838fe8ccba7d.jpg">
+
+  </div>
+
+</div>
+
+</div>
+
 </body>
 </html>
