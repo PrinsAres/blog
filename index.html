@@ -51,10 +51,16 @@
     <style>
 @media only screen and (min-width: 100px) and (max-width: 699px) {
 
-html, body{
-  min-height: 100vh;
+html{
+  height: 100%;
   background-color: white;
   
+}
+  body{
+  min-height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 }
 *{ 
@@ -399,6 +405,7 @@ background: linear-gradient(45deg, rgba(55,55,59,1) 0%, rgba(0,0,0,1) 50%);
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 footer p{
   text-align: center;
