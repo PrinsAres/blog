@@ -1,398 +1,397 @@
 <!Doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="Blog.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css.." />
-<title>Prosta Franklyn</title>
-  
+  <link rel="stylesheet" href="MyBlog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Prosta Franklyn</title>
+
 </head>
 <body>
   <style>
   *{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-/*background-repeat: no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-background-position: center center;
-height: 100vh;*/
-font-family: poppins, serif;
-font-weight: 600;
-font-size: 16px;
+  background-image: url("https://i.postimg.cc/zDwBcZRr/pexels-bess-hamiti-36487.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  /*background-size: cover;*/
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  font-family: poppins, serif;
+  font-weight: 600;
+  font-size: 16px;
 }
 a{
-text-decoration: none;
+  text-decoration: none;
 }
 header{
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-display: -o-flex;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 30px 70px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
 }
 .logo{
-height: 100%;
-display: table;
-float: left;
+  height: 100%;
+  display: table;
+  float: left;
 }
 .logo span{
-font-family: 'Courier New', cursive;
-font-size: 30px;
-font-weight: 800;
-display: table-cell;
-vertical-align: middle;
-color: #fff;
-text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  font-family: 'Courier New', cursive;
+  font-size: 30px;
+  font-weight: 800;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 .logo img{
-cursor: pointer;
-vertical-align: middle;
-border-radius: 50%;
-width: 75px;
-height: 75px;
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
 }
 .neon{
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 90vh;
-flex-direction: column;
-position: relative;
-/*background: rgba(255, 255, 255, 0.2);*/
-/*backdrop-filter: blur(1px);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  flex-direction: column;
+  position: relative;
+  /*background: rgba(255, 255, 255, 0.2);*/
+  /*backdrop-filter: blur(1px);*/
 }
 
 .neon a{
-border: 5px;
-position: relative;
-display: inline-block;
-padding: 25px 30px;
-margin: 40px 0;
-color: beige;
-text-decoration: none;
-text-transform: uppercase;
-overflow: hidden;
-transition: 0.5s;
-letter-spacing: 4px;
-font-size: 80px;
-font-weight: 600;
-font-family: Marker Felt, fantasy;
-text-shadow: 1px 1px 2px #fef, 0 0 25px blue, 0 0 5px #def;
+  border: 5px;
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: beige;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: Marker Felt, fantasy;
+  text-shadow: 1px 1px 2px #fef, 0 0 25px blue, 0 0 5px #def;
 }
 
 .neon h1{
-font-family: Avant Garde, sans-serif;
-color: white;
-font-size: 80px;
-font-weight: 200;
+  font-family: Avant Garde, sans-serif;
+  color: white;
+  font-size: 80px;
+  font-weight: 200;
 }
 
 .neon a:hover{
-border-radius: 5px;
-/*background: #03e9f4;*/
-color: #00FFFF;
-box-shadow: 0 0 5px #03e9f4,
-0 0 25px #03e9f4,
-0 0 50px #03e9f4;
+  border-radius: 5px;
+  /*background: #03e9f4;*/
+  color: #00FFFF;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4;
 }
 
 .neon a span{
-position: absolute;
-display: block;
+  position: absolute;
+  display: block;
 }
 
 .neon a span:nth-child(1){
-top: 0;
-left: -100%;
-width: 100%;
-height: 6px;
-background: linear-gradient(90deg, transparent, white);
-animation: animate1 1.5s linear infinite;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, transparent, white);
+  animation: animate1 1.5s linear infinite;
 }
 @keyframes animate1{
-0%{
-left: -100%
-}
-50%, 100%{
-left: 100%
-}
+  0%{
+    left: -100%
+  }
+  50%, 100%{
+    left: 100%
+  }
 }
 .neon a span:nth-child(3){
-bottom: 0;
-right: -100%;
-width: 100%;
-height: 6px;
-background: linear-gradient(270deg, transparent, white);
-animation: animate3 1.5s linear infinite;
-animation-delay: 0.5s;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(270deg, transparent, white);
+  animation: animate3 1.5s linear infinite;
+  animation-delay: 0.5s;
 }
 @keyframes animate3{
-0%{
-right: -100%
-}
-50%, 100%{
-right: 100%
-}
+  0%{
+    right: -100%
+  }
+  50%, 100%{
+    right: 100%
+  }
 }
 .nav-area{
-list-style: none;
+  list-style: none;
 }
 .nav-area li{
-display: inline-block;
-padding: 0 15px;
-text-transform: uppercase;
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
 }
 .nav-area li a{
-transition: .3s;
-color: #fff;
+  transition: .3s;
+  color: #fff;
 }
 .nav-area li a:hover{
-border-radius: 5px;
-background: linear-gradient(90deg, transparent, deepskyblue);
-padding: 10px 30px;
-text-shadow: 01px 1px 2px #fef, 0 0 25px blue, 0 0 5px #def;
+  border-radius: 5px;
+  background: linear-gradient(90deg, transparent, deepskyblue);
+  padding: 10px 30px;
+  text-shadow: 01px 1px 2px #fef, 0 0 25px blue, 0 0 5px #def;
 }
 .btn-area{
-cursor: pointer;
-color: #fff;
-font-size: 16px;
-letter-spacing: 2px;
-text-transform: uppercase;
-padding: 10px 30px;
-border-radius: 5px;
-background: linear-gradient(90deg, transparent, deepskyblue);;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, transparent, deepskyblue);;
 }
 .team{
-border-radius: 5px;
-background-image: url('https://i.postimg.cc/BQq9GwPm/pexels-denis-linine-714256.jpg');
-background-repeat: no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-background-position: center center;
-padding-bottom: 5px;
-backdrop-filter: blur(1px);
+  border-radius: 5px;
+  background: url('https://i.postimg.cc/90KkCNDH/4-Z-2101-w017-n001-333-A-p30-333.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 5px;
+  backdrop-filter: blur(1px);
 }
 
 .team .team-head h1{
-font-family: Monospace, sans-serif;
-padding: 20px 0 30px;
-text-align:center;
-position:relative;
-top:0;
-color: #222;
+  font-family: Monospace, sans-serif;
+  padding: 20px 0 30px;
+  text-align:center;
+  position:relative;
+  top:0;
+  color: #222;
 
 }
 
 .team .team-head span{
-position:absolute;
-width:50px;
-height:5px;
-background-color:#008eff;
-border-radius:4px;
-bottom:10px;
-left:50%;
-transform:translateX(-50%);
+  position:absolute;
+  width:50px;
+  height:5px;
+  background-color:#008eff;
+  border-radius:4px;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
 
 }
 
 .team .team-content{
-padding:20px 0;
-width:90%;
-margin:45px auto;
-display:flex;
-align-items:center;
-border-radius:10px;
-background-image: linear-gradient(to right top, #10b4d6, #59c1d8, #82cddc, #a4d9e1, #c4e5e8, #b9dce2, #aed4dc, #a4cbd6, #72abc7, #4b88b9, #3965a7, #3e3e8c);
-overflow:hidden;
-position:relative;
+  padding:20px 0;
+  width:90%;
+  margin:45px auto;
+  display:flex;
+  align-items:center;
+  border-radius:10px;
+  background-image: linear-gradient(to right top, #10b4d6, #59c1d8, #82cddc, #a4d9e1, #c4e5e8, #b9dce2, #aed4dc, #a4cbd6, #72abc7, #4b88b9, #3965a7, #3e3e8c);
+  overflow:hidden;
+  position:relative;
 }
 
 .team .team-content:hover{
-box-shadow:0 0 15px rgba(0,0,0,.5);
-background: rgb(55,55,59);
-background: linear-gradient(45deg, rgba(55,55,59,1) 0%, rgba(0,0,0,1) 50%);
+  box-shadow:0 0 15px rgba(0,0,0,.5);
+  background: rgb(55,55,59);
+  background: linear-gradient(45deg, rgba(55,55,59,1) 0%, rgba(0,0,0,1) 50%);
 }
 
 .team .team-content img{
-width:100px;
-height:100px;
-border-radius:50%;
-margin:0 15px;
-border:5px solid #ccc;
-object-fit:cover;
-filter:grayscale(100%);
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin:0 15px;
+  border:5px solid #ccc;
+  object-fit:cover;
+  filter:grayscale(100%);
 }
 
 .team .team-content:hover img{
-border-color: red;
-margin-bottom:20px;
-filter:grayscale(0%);
+  border-color: red;
+  margin-bottom:20px;
+  filter:grayscale(0%);
 }
 
 .team-text h3{
-color:#222;
-margin-bottom:10px;
+  color:#222;
+  margin-bottom:10px;
 }
 
 .team .team-content:hover h3{
-color:#ccc;
+  color:#ccc;
 }
 
 .team-text p{
-font-family:"poppins",sans-serif;
-color:#444;
-font-size:15px;
-margin-bottom:17px;
-line-height:17px;
+  font-family:"poppins",sans-serif;
+  color:#444;
+  font-size:15px;
+  margin-bottom:17px;
+  line-height:17px;
 }
 
 .team .team-content:hover p{
-color:#aaa;
-margin-bottom:30px;
+  color:#aaa;
+  margin-bottom:30px;
 }
 
 .team-text .team-icons{
-width:100%;
-display:flex;
-align-items:center;
-justify-content:center;
-background-color: slategrey;
-position:absolute;
-transform:translateY(30px);
-left:0;
-height:30px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: slategrey;
+  position:absolute;
+  transform:translateY(30px);
+  left:0;
+  height:30px;
 }
 
 .team .team-content:hover .team-icons{
-transform:translateY(-10px);
+  transform:translateY(-10px);
 }
 
 .team-text .team-icons .fa{
-padding: 0;
-margin-right:15px;
-font-size:18px;
-color:#fff;
-line-height:30px;
+  padding: 0;
+  margin-right:15px;
+  font-size:18px;
+  color:#fff;
+  line-height:30px;
 }
 
 .team-text .team-icons .fa:hover{
-color:#333;
-} 
-
-
+  color:#333;
+}
 
   </style>
 <header>
-<div class="logo">
-<span>Prosta</span> <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt=""><span>Franklyn</span>
-</div>
-<nav>
-<ul class="nav-area">
-<li><a href="#">HOME</a></li>
-<li><a href="#">ABOUT</a></li>
-<li><a href="#">SERVICES</a></li>
-<li><a href="#">CONTACT</a></li>
-</ul>
-</nav>
-<a href="#" class="btn-area">login</a>
-  
+  <div class="logo">
+    <span>Prosta</span> <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt=""><span>Franklyn</span>
+  </div>
+  <nav>
+    <ul class="nav-area">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <a href="#" class="btn-area">login</a>
+
 </header>
 
 <div class="neon">
-<a href="#">
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-Adventure Awaits!
-</a>
+  <a href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Adventure Awaits!
+  </a>
 </div>
 
 <section class="team" id="team">
-  
-<div class="team-head">
-<h1>Stories <span></span></h1>
-</div>
-<div class="team-content">
 
-<img src="https://dl.dropbox.com/s/1nx0tekpajzd6ad/Screenshot_20210113-.." alt="image">
-<div class="team-text">
-<h3>Name</h3>
-<p>
-some text some text
-some text some text
-some text some text
-some text some text
-some text some text.
+  <div class="team-head">
+    <h1>Stories <span></span></h1>
+  </div>
+  <div class="team-content">
 
-</p>
-<div class="team-icons">
-<i class="fa fa-facebook"></i>
-<i class="fa fa-twitter"></i>
-<i class="fa fa-instagram"></i>
-<i class="fa fa-linkedin"></i>
-</div>
+    <img src="https://dl.dropbox.com/s/1nx0tekpajzd6ad/Screenshot_20210113-.." alt="image">
+    <div class="team-text">
+      <h3>Name</h3>
+      <p>
+        some text some text
+        some text some text
+        some text some text
+        some text some text
+        some text some text.
 
-</div>
-</div>
+      </p>
+      <div class="team-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
 
-
-
-<div class="team-content">
-<img src="https://dl.dropbox.com/s/fq2bbmbe9if6g18/Screenshot_20210105-.." alt="image">
-<div class="team-text">
-<h3>Name</h3>
-<p>
-some text some text
-some text some text
-some text some text
-some text some text
-some text some text.
-
-</p>
-<div class="team-icons">
-<i class="fa fa-facebook"></i>
-<i class="fa fa-twitter"></i>
-<i class="fa fa-instagram"></i>
-<i class="fa fa-linkedin"></i>
-</div>
-</div>
-</div>
+    </div>
+  </div>
 
 
-<div class="team-content">
-<img src="https://dl.dropbox.com/s/sl967nrq0ml4raa/Screenshot_20210102-.." alt="image">
-<div class="team-text">
-<h3>Name</h3>
-<p>
-some text some text
-some text some text
-some text some text
-some text some text
-some text some text.
 
-</p>
-<div class="team-icons">
-<i class="fa fa-facebook"></i>
-<i class="fa fa-twitter"></i>
-<i class="fa fa-instagram"></i>
-<i class="fa fa-linkedin"></i>
-</div>
-</div>
-</div>
- 
+  <div class="team-content">
+    <img src="https://dl.dropbox.com/s/fq2bbmbe9if6g18/Screenshot_20210105-.." alt="image">
+    <div class="team-text">
+      <h3>Name</h3>
+      <p>
+        some text some text
+        some text some text
+        some text some text
+        some text some text
+        some text some text.
+
+      </p>
+      <div class="team-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="team-content">
+    <img src="https://dl.dropbox.com/s/sl967nrq0ml4raa/Screenshot_20210102-.." alt="image">
+    <div class="team-text">
+      <h3>Name</h3>
+      <p>
+        some text some text
+        some text some text
+        some text some text
+        some text some text
+        some text some text.
+
+      </p>
+      <div class="team-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 </body>
