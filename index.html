@@ -4,30 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="MyBlog.css">
+  <link rel="stylesheet" href="Blogger.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Prosta Franklyn</title>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="Blogger.css" media="screen and (max-width: 1400px)" />
+
+  <title>Prosta Franklyn</title>
 </head>
 <body>
-  <style>
+  <styles>
   *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
 body{
-  background-image: url("https://i.postimg.cc/zDwBcZRr/pexels-bess-hamiti-36487.jpg");
+ /* background-image: url("https://i.postimg.cc/hj7HBxQQ/pexels-arthouse-studio-4338020.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   /*background-size: cover;*/
   background-position: center center;
-  height: 100vh;
-  width: 100vw;
+
   font-family: poppins, serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+.fullscreen{
+  width: 100%;
+  height: 87vh;
+  overflow: hidden;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+#black {
+  height: 18rem;
+  width: 55vw;
+  background: linear-gradient(-120deg, #021b79, #0575e6, #205e9b);
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 25px 25px 30px rgba(45, 500, 364, 255);
+}
+
+#home {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+
+#home p {
+  padding: 2rem 1.3em;
+  font-size: 0.9rem;
+  width: 500px;
+}
+
+
+
+#black{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  width: 20rem;
+  margin-top: 3rem;
+}
+
+#black p{
+  font-size: 1rem;
+  width: 15rem;
+  margin: 5px;
+  padding: 0;
+  margin: 15px 5px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#black h1{
+  margin-top: 4px;
+}
+
+#black button{
+  display: block;
+  margin: auto;
 }
 a{
   text-decoration: none;
@@ -177,7 +262,7 @@ header{
 }
 .team{
   border-radius: 5px;
-  background: url('https://i.postimg.cc/90KkCNDH/4-Z-2101-w017-n001-333-A-p30-333.jpg') no-repeat center center fixed;
+  background: url('https://i.postimg.cc/pr5V3pRs/pexels-martin-damboldt-814499.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -192,7 +277,7 @@ header{
   text-align:center;
   position:relative;
   top:0;
-  color: #222;
+  color: #fff;
 
 }
 
@@ -292,8 +377,9 @@ header{
   color:#333;
 }
 
-  </style>
+  </styles>
 <header>
+
   <div class="logo">
     <span>Prosta</span> <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt=""><span>Franklyn</span>
   </div>
@@ -308,16 +394,33 @@ header{
   <a href="#" class="btn-area">login</a>
 
 </header>
+<div class="fullscreen">
+  <video src="https://sv2.onlinevideoconverter.com/download?963348-961196" autoplay muted loop></video>
 
-<div class="neon">
+  <section id="home">
+    <div id="black">
+
+      <h1 class="heading-primary center">
+        Welcome to Food Point
+      </h1>
+      <p class="center">Lorem ipsum dolor sit amet, consectetur adip
+        iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimis nostrud exercitation ullamco laborisip ex ea</p>
+
+      <button class="btn" type="submit">Order Now</button>
+    </div>
+  </section>
+</div>
+
+
+<!-- <div class="neon">
   <a href="#">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
-    Adventure Awaits!
+    Let's go!
   </a>
-</div>
+</div> -->
 
 <section class="team" id="team">
 
@@ -326,7 +429,7 @@ header{
   </div>
   <div class="team-content">
 
-    <img src="https://dl.dropbox.com/s/1nx0tekpajzd6ad/Screenshot_20210113-.." alt="image">
+    <img src="https://i.postimg.cc/DfWTdhtC/pexels-pixabay-163077.jpg" alt="image">
     <div class="team-text">
       <h3>Name</h3>
       <p>
@@ -350,7 +453,7 @@ header{
 
 
   <div class="team-content">
-    <img src="https://dl.dropbox.com/s/fq2bbmbe9if6g18/Screenshot_20210105-.." alt="image">
+    <img src="https://i.postimg.cc/cL02jGbG/pexels-aline-viana-prado-3491940.jpg" alt="image">
     <div class="team-text">
       <h3>Name</h3>
       <p>
@@ -372,7 +475,7 @@ header{
 
 
   <div class="team-content">
-    <img src="https://dl.dropbox.com/s/sl967nrq0ml4raa/Screenshot_20210102-.." alt="image">
+    <img src="https://i.postimg.cc/0NrWRkGF/star-wars-darth-vader-1024x768-wallpaper-www-wallpaperhi-com-71.jpg" alt="image">
     <div class="team-text">
       <h3>Name</h3>
       <p>
@@ -393,6 +496,5 @@ header{
   </div>
 
 </section>
-
 </body>
 </html>
