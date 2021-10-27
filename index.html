@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="Website1.css">
   <link href="https://icons8.com/icon/35545/game-controller">
   <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="Website1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-hammerjs@2.0.0/jquery.hammer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+  <script src="SortArray.js"></script>
 </head>
 <body>
   <style>
@@ -34,20 +39,15 @@ header{
 
 
 }
-wrapper {
+/*wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 80em;
-}
+}*/
 
-container {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  justify-content: center;
-  padding: 1em;
-  /*width: 100%;*/
-}
+
+
+
 /*h1{
   text-align:center ;
   color: mediumpurple;
@@ -64,68 +64,21 @@ h1 {
   text-align: center;
   font-family: 'Luckiest Guy', serif;
   color: yellowgreen;
-  animation: text-shadow 1.5s ease-in-out infinite;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow:   0 -6px 0 #212121,
-  0 -6px 0 #212121,
-  0  6px 0 #212121,
-  0  6px 0 #212121,
-  -6px  0 0 #212121,
-  6px  0 0 #212121,
-  -6px  0 0 #212121,
-  6px  0 0 #212121,
-  -6px -6px 0 #212121,
-  6px -6px 0 #212121,
-  -6px  6px 0 #212121,
-  6px  6px 0 #212121,
-  -6px  18px 0 #212121,
-  0  18px 0 #212121,
-  6px  18px 0 #212121,
+  text-shadow:
   0 19px 1px rgba(0,0,0,.1),
   0 0 6px rgba(0,0,0,.1),
   0 6px 3px rgba(0,0,0,.3),
   0 12px 6px rgba(0,0,0,.2),
-  0 18px 18px rgba(0,0,0,.25),
-  0 24px 24px rgba(0,0,0,.2),
-  0 36px 36px rgba(0,0,0,.15);
+  0 18px 18px rgba(165, 5, 246, 0.25),
+  0 24px 24px rgba(203, 35, 250, 0.2),
+  0 36px 36px rgba(13, 122, 229, 0.15);
 }
 
 
 h1:hover {
-  animation-play-state: paused;
+  animation-play-state: running;
 }
-@keyframes text-shadow {
-  0% {
-    transform: translateY(0);
-    text-shadow:
-      0 0 0 #0c2ffb
-  }
 
-  20% {
-    transform: translateY(-1em);
-    text-shadow:
-      0 0.125em 0 #0c2fcb
-  }
-
-  40% {
-    transform: translateY(0.5em);
-    text-shadow:
-      0 -0.0625em 0 #0c2ffb
-  }
-
-  60% {
-    transform: translateY(-0.25em);
-    text-shadow:
-      0 0.03125em 0 #0c2ffb
-  }
-
-  80% {
-    transform: translateY(0);
-    text-shadow:
-      0 0 0 #0c2ffb
-  }
-}
 
 img{
   cursor:pointer ;
@@ -136,18 +89,24 @@ img{
 }
 
 nav {
-  background-color: black;
-  overflow:hidden;
+  background: black;
+  /*background-image: url('https://i.postimg.cc/3rDB1nQN/perfect.gif');*/
+  /*background-repeat: no-repeat;
+  -webkit-background-size: cover;*/
+  /*background-size: cover;*/
+  /*background-position: center center;*/
+  overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
+
 nav a{
   list-style-type:none;
   text-decoration:none;
   padding:12px 6px 12px 6px;
-  justify-content:space-between;
+  justify-content: stretch;
   color:white;
 }
 nav a:hover{
@@ -185,6 +144,14 @@ nav i:hover{
   color:red;
 }
 
+.btn {
+  font-family: 'Nova Square', cursive;
+  font-size:17px;
+  font-weight:bold;
+  padding:8px;
+  margin-bottom:7px;
+  cursor:pointer;
+}
 
 .team{
   border-radius: 5px;
@@ -198,14 +165,14 @@ nav i:hover{
   backdrop-filter: blur(1px);
 }
 
-.team .team-head h1{
+.team .team-head h2{
   font-family: Monospace, sans-serif;
   padding: 20px 0 30px;
   text-align:center;
   position:relative;
   top:0;
   color: #fff;
-
+  font-size: 20pt;
 }
 
 .team .team-head span{
@@ -304,39 +271,65 @@ nav i:hover{
   color:#333;
 }
 
+.footer{
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  top: 2170px;
+  right: 0;
+  background: slategrey;
+  padding: 15px 0;
+}
+
+.footer .social{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.footer .social img{
+  vertical-align: center;
+  margin: 0 5px;
+  padding-top: 50px;
+}
+
   </style>
 <header>
-<div id="wrapper">
-  <div id="container">
-
-    <h1> <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/> Prosta
-      <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt="logo">
-      Frankkyn <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/>
-    </h1>
-
-  </div>
-</div>
-  </header>
   <nav>
 
-  <b>
-    <a href="#" class="active">Home</a>
-    <a href="#">Image</a>
-    <a href="#">Audio</a>
-    <a href="#">Video</a>
-    <a href="#">Sign in</a>
-    <input type="checkbox" id="btn" hidden>
-    <label for="btn" class="menu-btn">
-      <i class="fa fa-grav teal-color"></i>
-    </label>
-  </b>
-</nav>
-<div class="di"></div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <b>
+      <a href="#" class="active">Home</a>
+      <a href="#">Image</a>
+      <a href="#">Audio</a>
+      <a href="#">Video</a>
+      <a href="#">Sign in</a>
+      <input type="checkbox" id="btn" hidden>
+      <label for="btn" class="menu-btn">
+        <i class="fa fa-grav teal-color"></i>
+      </label>
+      <div id="wrapper">
+        <div id="container">
+
+          <h1> <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/> Prosta
+            <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt="logo">
+            Frankkyn <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/>
+          </h1>
+
+        </div>
+      </div>
+    </b>
+  </nav>
+  <div class="di"></div>
+  </header>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <section class="team" id="team">
 
 <div class="team-head">
-  <h1>Stories <span></span></h1>
+  <h2>Stories <span></span></h2>
 </div>
 <div class="team-content">
 
@@ -406,5 +399,15 @@ nav i:hover{
   </div>
 </div>
 </section>
+
+<div class="footer">
+  <div class="social">
+    <a href=""><img src="https://i.postimg.cc/1XHcF7b3/fb.png" height="30px" width="30px" alt=""></a>
+    <a href=""><img src="https://i.postimg.cc/RhF2pYKN/github.png" height="30px" width="30px" alt=""></a>
+    <a href=""><img src="https://i.postimg.cc/tR8HmXvb/instagram.png" height="30px" width="30px" alt=""></a>
+    <a href=""><img src="https://i.postimg.cc/mZCdBB2B/discord.png" height="30px" width="30px" alt=""></a>
+  </div>
+</div>
+
 </body>
 </html>
