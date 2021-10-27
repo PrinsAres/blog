@@ -1,261 +1,199 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="Blogger.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="Blogger.css" media="screen and (max-width: 1400px)" />
-
-  <title>Prosta Franklyn</title>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Website1.css">
+  <link href="https://icons8.com/icon/35545/game-controller">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="Website1.css">
+</head>
+<body>
   <style>
-  
-    *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-body{
-  background-image: url("https://i.postimg.cc/sDTv3tLn/pe.jpg");
+  body {
+  margin:0;
+  padding:0;
+  background-image:url("https://i.postimg.cc/sDTv3tLn/pe.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  /*background-size: cover;*/
+  background-size: cover;
   background-position: center center;
 
   font-family: poppins, serif;
   font-weight: 600;
   font-size: 16px;
-}
+  height: 100vh;
 
-.fullscreen{
-  width: 100%;
-  height: 87vh;
-  overflow: hidden;
-  display: flex;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-#black {
-  height: 18rem;
-  width: 55vw;
-  background: linear-gradient(-120deg, #021b79, #0575e6, #205e9b);
-  margin-bottom: 10px;
-  border-radius: 20px;
-  box-shadow: 25px 25px 30px rgba(45, 500, 364, 255);
-}
-
-#home {
-  display: flex;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-
-
-#home p {
-  padding: 2rem 1.3em;
-  font-size: 0.9rem;
-  width: 500px;
-}
-
-
-
-#black{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 20rem;
-  width: 20rem;
-  margin-top: 3rem;
-}
-
-#black p{
-  font-size: 1rem;
-  width: 15rem;
-  margin: 5px;
-  padding: 0;
-  font-weight: normal;
-  text-align: center;
-}
-
-#black h1{
-  margin-top: 4px;
-}
-
-#black button{
-  display: block;
-  margin: auto;
-}
-a{
-  text-decoration: none;
 }
 header{
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 70px;
-}
-.logo{
-  height: 100%;
-  display: table;
-  float: left;
-}
-.logo span{
-  font-family: 'Courier New', cursive;
-  font-size: 30px;
-  font-weight: 800;
-  display: table-cell;
-  vertical-align: middle;
-  color: #000;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #82cddc, 0 0 20px #0575e6, 0 0 25px #0575e6, 0 0 30px #0575e6, 0 0 35px #0575e6;
-}
-
-.logo img{
-  cursor: pointer;
-  vertical-align: middle;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-}
-.neon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  flex-direction: column;
-  position: relative;
-  /*background: rgba(255, 255, 255, 0.2);*/
-  /*backdrop-filter: blur(1px);*/
-}
-
-.neon a{
-  border: 5px;
-  position: relative;
-  display: inline-block;
-  padding: 25px 30px;
-  margin: 40px 0;
-  color: beige;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  font-size: 80px;
-  font-weight: 600;
-  font-family: Marker Felt, fantasy;
-  text-shadow: 1px 1px 2px #fef, 0 0 25px blue, 0 0 5px #def;
-}
-
-.neon h1{
-  font-family: Avant Garde, sans-serif;
-  color: white;
-  font-size: 80px;
-  font-weight: 200;
-}
-
-.neon a:hover{
-  border-radius: 5px;
-  /*background: #03e9f4;*/
-  color: #00FFFF;
-  box-shadow: 0 0 5px #03e9f4,
-  0 0 25px #03e9f4,
-  0 0 50px #03e9f4;
-}
-
-.neon a span{
-  position: absolute;
   display: block;
+
+
+}
+wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80em;
 }
 
-.neon a span:nth-child(1){
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(90deg, transparent, white);
-  animation: animate1 1.5s linear infinite;
+container {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+  padding: 1em;
+  /*width: 100%;*/
 }
-@keyframes animate1{
-  0%{
-    left: -100%
+/*h1{
+  text-align:center ;
+  color: mediumpurple;
+  margin-top:0;
+  font-family: "Courier New", sans-serif ;
+  animation: text-shadow 1.5s ease-in-out infinite;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 75px;
+
+}*/
+h1 {
+  font-size: 45pt;
+  text-align: center;
+  font-family: 'Luckiest Guy', serif;
+  color: yellowgreen;
+  animation: text-shadow 1.5s ease-in-out infinite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0 -6px 0 #212121,
+  0 -6px 0 #212121,
+  0  6px 0 #212121,
+  0  6px 0 #212121,
+  -6px  0 0 #212121,
+  6px  0 0 #212121,
+  -6px  0 0 #212121,
+  6px  0 0 #212121,
+  -6px -6px 0 #212121,
+  6px -6px 0 #212121,
+  -6px  6px 0 #212121,
+  6px  6px 0 #212121,
+  -6px  18px 0 #212121,
+  0  18px 0 #212121,
+  6px  18px 0 #212121,
+  0 19px 1px rgba(0,0,0,.1),
+  0 0 6px rgba(0,0,0,.1),
+  0 6px 3px rgba(0,0,0,.3),
+  0 12px 6px rgba(0,0,0,.2),
+  0 18px 18px rgba(0,0,0,.25),
+  0 24px 24px rgba(0,0,0,.2),
+  0 36px 36px rgba(0,0,0,.15);
+}
+
+
+h1:hover {
+  animation-play-state: paused;
+}
+@keyframes text-shadow {
+  0% {
+    transform: translateY(0);
+    text-shadow:
+      0 0 0 #0c2ffb
   }
-  50%, 100%{
-    left: 100%
+
+  20% {
+    transform: translateY(-1em);
+    text-shadow:
+      0 0.125em 0 #0c2fcb
+  }
+
+  40% {
+    transform: translateY(0.5em);
+    text-shadow:
+      0 -0.0625em 0 #0c2ffb
+  }
+
+  60% {
+    transform: translateY(-0.25em);
+    text-shadow:
+      0 0.03125em 0 #0c2ffb
+  }
+
+  80% {
+    transform: translateY(0);
+    text-shadow:
+      0 0 0 #0c2ffb
   }
 }
-.neon a span:nth-child(3){
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(270deg, transparent, white);
-  animation: animate3 1.5s linear infinite;
-  animation-delay: 0.5s;
+
+img{
+  cursor:pointer ;
+  vertical-align:middle ;
+  border-radius:50%;
+  width:75px;
+  height:75px;
 }
-@keyframes animate3{
-  0%{
-    right: -100%
-  }
-  50%, 100%{
-    right: 100%
-  }
+
+nav {
+  background-color: black;
+  overflow:hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  text-align: center;
 }
-.nav-area{
-  list-style: none;
+nav a{
+  list-style-type:none;
+  text-decoration:none;
+  padding:12px 6px 12px 6px;
+  justify-content:space-between;
+  color:white;
 }
-.nav-area li{
-  display: inline-block;
-  padding: 0 15px;
-  text-transform: uppercase;
+nav a:hover{
+  background-color:white;
+  padding:12px 6px 12px 6px;
+  color:red;
 }
-.nav-area li a{
-  transition: .3s;
-  color: #fff;
+
+.active{
+  background-color:red;
 }
-.nav-area li a:hover{
-  border-radius: 5px;
-  background: linear-gradient(90deg, transparent, deepskyblue);
-  padding: 10px 30px;
-  text-shadow: 01px 1px 2px #fef, 0 0 25px blue, 0 0 5px #def;
+.active:hover{
+  background-color:red;
+  color:white;
 }
-.btn-area{
-  cursor: pointer;
-  color: #fff;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background: linear-gradient(90deg, transparent, deepskyblue);;
+
+.di{
+  background-color:red;
+  height:5px;
 }
+.teal-color {
+  color:teal;
+}
+
+.menu-btn{
+  font-size: 2.9em;
+  height: 35%;
+  width: 25%;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+nav i:hover{
+  background-color:white;
+  color:red;
+}
+
+
 .team{
   border-radius: 5px;
-  background: url('https://i.postimg.cc/pr5V3pRs/pexels-martin-damboldt-814499.jpg') no-repeat center center fixed;
+  background: url('https://i.postimg.cc/bvYW0p21/2560x1440-star-wars-the-last-stand-4k-1615193648.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-top: 5px;
   padding-bottom: 5px;
   backdrop-filter: blur(1px);
 }
@@ -366,127 +304,107 @@ header{
   color:#333;
 }
 
-  
   </style>
-</head>
-<body>
 <header>
+<div id="wrapper">
+  <div id="container">
 
-  <div class="logo">
-    <span>Prosta</span> <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt=""><span>Franklyn</span>
+    <h1> <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/> Prosta
+      <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt="logo">
+      Frankkyn <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/>
+    </h1>
+
   </div>
+</div>
+  </header>
   <nav>
-    <ul class="nav-area">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">SERVICES</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-  <a href="#" class="btn-area">login</a>
 
-</header>
-<div class="fullscreen">
-
-  <section id="home">
-    <div id="black">
-
-      <h1 class="heading-primary center">
-        Welcome to Food Point
-      </h1>
-      <p class="center">Lorem ipsum dolor sit amet, consectetur adip
-        iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimis nostrud exercitation ullamco laborisip ex ea</p>
-
-      <button class="btn" type="submit">Order Now</button>
-    </div>
-  </section>
-</div>
-
-
- <div class="neon">
-  <a href="#">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    -- PRESS PLAY --
-  </a>
-</div>
-
+  <b>
+    <a href="#" class="active">Home</a>
+    <a href="#">Image</a>
+    <a href="#">Audio</a>
+    <a href="#">Video</a>
+    <a href="#">Sign in</a>
+    <input type="checkbox" id="btn" hidden>
+    <label for="btn" class="menu-btn">
+      <i class="fa fa-grav teal-color"></i>
+    </label>
+  </b>
+</nav>
+<div class="di"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <section class="team" id="team">
 
-  <div class="team-head">
-    <h1>Stories <span></span></h1>
+<div class="team-head">
+  <h1>Stories <span></span></h1>
+</div>
+<div class="team-content">
+
+  <img src="https://i.postimg.cc/DfWTdhtC/pexels-pixabay-163077.jpg" alt="image">
+  <div class="team-text">
+    <h3>Name</h3>
+    <p>
+      some text some text
+      some text some text
+      some text some text
+      some text some text
+      some text some text.
+
+    </p>
+    <div class="team-icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+
   </div>
-  <div class="team-content">
+</div>
 
-    <img src="https://i.postimg.cc/DfWTdhtC/pexels-pixabay-163077.jpg" alt="image">
-    <div class="team-text">
-      <h3>Name</h3>
-      <p>
-        some text some text
-        some text some text
-        some text some text
-        some text some text
-        some text some text.
 
-      </p>
-      <div class="team-icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
 
+<div class="team-content">
+  <img src="https://i.postimg.cc/cL02jGbG/pexels-aline-viana-prado-3491940.jpg" alt="image">
+  <div class="team-text">
+    <h3>Name</h3>
+    <p>
+      some text some text
+      some text some text
+      some text some text
+      some text some text
+      some text some text.
+
+    </p>
+    <div class="team-icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
     </div>
   </div>
+</div>
 
 
+<div class="team-content">
+  <img src="https://i.postimg.cc/0NrWRkGF/star-wars-darth-vader-1024x768-wallpaper-www-wallpaperhi-com-71.jpg" alt="image">
+  <div class="team-text">
+    <h3>Name</h3>
+    <p>
+      some text some text
+      some text some text
+      some text some text
+      some text some text
+      some text some text.
 
-  <div class="team-content">
-    <img src="https://i.postimg.cc/cL02jGbG/pexels-aline-viana-prado-3491940.jpg" alt="image">
-    <div class="team-text">
-      <h3>Name</h3>
-      <p>
-        some text some text
-        some text some text
-        some text some text
-        some text some text
-        some text some text.
-
-      </p>
-      <div class="team-icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
+    </p>
+    <div class="team-icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
     </div>
   </div>
-
-
-  <div class="team-content">
-    <img src="https://i.postimg.cc/0NrWRkGF/star-wars-darth-vader-1024x768-wallpaper-www-wallpaperhi-com-71.jpg" alt="image">
-    <div class="team-text">
-      <h3>Name</h3>
-      <p>
-        some text some text
-        some text some text
-        some text some text
-        some text some text
-        some text some text.
-
-      </p>
-      <div class="team-icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-    </div>
-  </div>
-
+</div>
 </section>
 </body>
 </html>
-
