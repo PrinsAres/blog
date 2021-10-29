@@ -1,108 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <title>Prosta Franklyn</title>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="Website1.css">
+  <script src="perfect.js"></script>
+  <link rel="stylesheet" href="perfect.css">
   <link href="https://icons8.com/icon/35545/game-controller">
-  <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="Website1.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="perfect.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://hammerjs.github.io/dist/hammer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-hammerjs@2.0.0/jquery.hammer.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
-  <script src="Website1.js"></script>
+
 </head>
 <body>
+  
   <style>
-    html {
+html{
   scroll-behavior: smooth;
+  height: 100%;
 }
-  body {
-  margin:0;
-  padding:0;
+
+body{
+ /* background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);*/
+  /*background-image:url("https://i.postimg.cc/sDTv3tLn/pe.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;*/
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.middle{
-  background-image:url("https://i.postimg.cc/sDTv3tLn/pe.jpg");
+.wallpapers{
+ height: 100%;
+  background-image:url("https://i.postimg.cc/xCrxQRB5/cyberpunk.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 
+/*@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}*/
+
+
+
+/*@keyframes myanimation {
+  0% {background-image: url('https://i.postimg.cc/T2q3mrWS/ninja.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;}
+  25%{background-image: url('https://i.postimg.cc/MKSjJ6yk/jp.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;}
+  50%{background-image: url('https://i.postimg.cc/c4XPGJV6/darthvader.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;}
+  75%{background-image: url('https://i.postimg.cc/Qx3jdV4b/battlefield.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;}
+  100% {background-image: url('https://i.postimg.cc/TPX18C8R/pe.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;}
+}*/
+
 header{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: block;
-
-
-}
-/*wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80em;
-}*/
-
-
-
-
-/*h1{
-  text-align:center ;
-  color: mediumpurple;
-  margin-top:0;
-  font-family: "Courier New", sans-serif ;
-  animation: text-shadow 1.5s ease-in-out infinite;
-  line-height: 1;
-  font-weight: 900;
-  font-size: 75px;
-
-}*/
-h1 {
-  font-size: 45pt;
-  text-align: center;
-  font-family: 'Luckiest Guy', serif;
-  color: yellowgreen;
-  text-shadow:
-  0 19px 1px rgba(0,0,0,.1),
-  0 0 6px rgba(0,0,0,.1),
-  0 6px 3px rgba(0,0,0,.3),
-  0 12px 6px rgba(0,0,0,.2),
-  0 18px 18px rgba(165, 5, 246, 0.25),
-  0 24px 24px rgba(203, 35, 250, 0.2),
-  0 36px 36px rgba(13, 122, 229, 0.15);
-}
-
-img{
-  cursor:pointer ;
-  vertical-align:middle ;
-  border-radius:50%;
-  width:75px;
-  height:75px;
-}
-
-nav {
-  background: black;
-  /*background-image: url('https://i.postimg.cc/3rDB1nQN/perfect.gif');*/
-  /*background-repeat: no-repeat;
-  -webkit-background-size: cover;*/
-  /*background-size: cover;*/
-  /*background-position: center center;*/
-  overflow: hidden;
-  padding-top: 20px;
-
   justify-content: center;
+  background-color: #2b4162;
+  background-image: linear-gradient(115deg, #2b4162 0%, #12100e 94%);
+}
+
+nav{
+  overflow: auto;
   text-align: center;
+  padding-top: 10px;
+  width: 100%;
 }
 
 nav a{
-  list-style-type:none;
-  text-decoration:none;
   padding:12px 6px 12px 6px;
-  justify-content: stretch;
+  justify-content: space-between;
   color:white;
+  display: inline-block;
+  width: 15%;
 }
+
 nav a:hover{
   background-color:white;
   padding:12px 6px 12px 6px;
@@ -117,20 +118,28 @@ nav a:hover{
   color:white;
 }
 
-.di{
+.red-bar{
   background-color:red;
-  height:5px;
+  height:10px;
 }
+
+.btn {
+  padding: 12px 6px 12px 6px;
+  cursor:pointer;
+  vertical-align: middle;
+}
+
 .teal-color {
   color:teal;
 }
 
-.menu-btn{
+.icon-btn{
   font-size: 2.9em;
-  height: 35%;
-  width: 25%;
+  height: 25%;
+  width: 15%;
   justify-content: space-between;
   vertical-align: middle;
+  float: right;
 }
 
 nav i:hover{
@@ -138,24 +147,163 @@ nav i:hover{
   color:red;
 }
 
-.btn {
-  font-family: 'Nova Square', cursive;
-  font-size:17px;
-  font-weight:bold;
-  padding:8px;
-  margin-bottom:7px;
-  cursor:pointer;
+nav img{
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+h1{
+  cursor: pointer;
+  padding: 12px 6px 12px 6px;
+  font-size: 34pt;
+  font-family: 'Luckiest Guy', serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0 -6px 0 #212121,
+  0 -6px 0 #212121,
+  0  6px 0 #212121,
+  0  6px 0 #212121,
+  -6px  0 0 #212121,
+  6px  0 0 #212121,
+  -6px  0 0 #212121,
+  6px  0 0 #212121,
+  -6px -6px 0 #212121,
+  6px -6px 0 #212121,
+  -6px  6px 0 #212121,
+  6px  6px 0 #212121,
+  -6px  18px 0 #212121,
+  0  18px 0 #212121,
+  6px  18px 0 #212121,
+  0 19px 1px rgba(0,0,0,.1),
+  0 0 6px rgba(0,0,0,.1),
+  0 6px 3px rgba(0,0,0,.3),
+  0 12px 6px rgba(0,0,0,.2),
+  0 18px 18px rgba(0,0,0,.25),
+  0 24px 24px rgba(0,0,0,.2),
+  0 36px 36px rgba(0,0,0,.15);
+}
+
+h1:hover{
+  color: greenyellow;
+}
+
+.logo-page{
+  justify-content: center;
+}
+
+\* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+}
+
+.container h1{
+  font-family: Monospace, sans-serif;
+  color: #A8EB12;
+
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
+
+  border-radius: 5px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+img {
+  box-shadow: 0 0 5px 0 rgba(81, 81, 81, 0.47);
+}
+
+
+.player {
+  border-radius: 8px;
+  min-width: 320px;
+  padding: 16px 10px;
+  background: #fef;
+  text-align: center;
 }
 
 .team{
   border-radius: 5px;
-  background: url('https://i.postimg.cc/bvYW0p21/2560x1440-star-wars-the-last-stand-4k-1615193648.jpg') no-repeat center center fixed;
+  /*background: url('https://i.postimg.cc/bvYW0p21/2560x1440-star-wars-the-last-stand-4k-1615193648.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   padding-top: 5px;
   padding-bottom: 5px;
+
   backdrop-filter: blur(1px);
 }
 
@@ -170,20 +318,20 @@ nav i:hover{
 }
 
 .team .team-head span{
-  position:absolute;
+  position: absolute;
   width:50px;
   height:5px;
-  background-color:#008eff;
+  background-color: red;
   border-radius:4px;
   bottom:10px;
-  left:50%;
+  left:30.5%;
   transform:translateX(-50%);
 
 }
 
 .team .team-content{
   padding:20px 0;
-  width:90%;
+  width:50%;
   margin:45px auto;
   display:flex;
   align-items:center;
@@ -191,6 +339,7 @@ nav i:hover{
   background-image: linear-gradient(to right top, #10b4d6, #59c1d8, #82cddc, #a4d9e1, #c4e5e8, #b9dce2, #aed4dc, #a4cbd6, #72abc7, #4b88b9, #3965a7, #3e3e8c);
   overflow:hidden;
   position:relative;
+
 }
 
 .team .team-content:hover{
@@ -261,22 +410,15 @@ nav i:hover{
   line-height:30px;
 }
 
-.team-text .team-icons .fa:hover{
-  color:#333;
+.team-text .team-icons .fa:hover {
 }
 
 .footer{
-  height: 90px;
-  width: 100%;
-  top: 2170px;
-  right: 0;
-  background: slategrey;
-  padding: 15px 0;
-  position: revert;
-  left: 0;
-  bottom: 0;
   color: white;
-  text-align: center;
+  background:#6cf;
+  padding: 3em;
+  margin-top: auto;
+
 }
 
 .footer .social{
@@ -291,463 +433,166 @@ nav i:hover{
 .footer .social img{
   vertical-align: center;
   margin: 0 5px;
-  padding-top: 50px;
+  height: 75px;
+  width: 75px;
 }
-
-:root {
-  --time : 0.2s;
-}
-
-.wrapper {
-  height:100vh;
-  overflow:hidden;
-  /*background-color:#f5f5f5;*/
-  perspective: 950px ;
-  /*background:linear-gradient(135deg, #f3f3ff 0%,#5D687445 100%);*/
-}
-
-.circular-slider {
-  position:relative;
-  height: 90% ;
-  display: flex ;
-  align-items: center ;
-  justify-content: center ;
-  transform-style: preserve-3d;
-  padding-top: 330px;
-}
-
-.card {
-  position: absolute ;
-  width :20rem;
-  height:16rem;
-  background-color:#fff;
-  border-radius:16px;
-  box-shadow:
-    0 3px 6px rgba(0,0,0,.2),
-    0 8px 16px rgba(0,0,0,.15);
-
-
-  backface-visibility: hidden;
-
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-.card .content {
-  width :100%;
-  height:100%;
-  font-size:2rem;
-  backface-visibility: hidden;
-  display: flex ;
-  align-items: center ;
-  justify-content: center ;
-  text-align:center;
-  position:absolute;
-  transform-style: preserve-3d;
-
-  transform:translateZ(3rem) rotateY(0deg);
-  filter:drop-shadow(0px 0px 4px rgba(0,0,0,.2));
-  color: #fff;
-}
-
-
-.card:nth-child(1) {
-  background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
-}
-
-.card:nth-child(6) {
-  background:linear-gradient(135deg, #c3ec52aa 0%,#0ba29daa 100%);
-}
-
-.card:nth-child(3) {
-  background:linear-gradient(135deg, #0FF0B388 0%,#036ED988 100%);
-}
-
-.card:nth-child(4) {
-  background:linear-gradient(135deg, #fcdf8a 0%,#f38381 100%);
-}
-
-.card:nth-child(5) {
-  background:linear-gradient(135deg, #fad961aa 0%,#f76b1caa 100%);
-}
-
-.card:nth-child(2) {
-  background:linear-gradient(135deg, #f02fc2cc 0%,#6094eacc 100%);
-}
-
   </style>
-  
   <script>
-  let slider ;
-let angleOffset = 0 ;
-let unitAngle ;
-let lastMousePosition ;
-let curMousePosition ;
-let deltaMouse ;
-let clock ;
-let lastFrameTime = NaN ;
-let velocity = 0;
-let meanPosition = 0 ;
-let position = 0;
-const springConstant = 156 ;
-const sliderMass = 1 ;
-const dampingForce = 10 ;
-const acceleration = -500 ;
-const mouseSensitivity = 0.2 ;
-const touchSensitivity = 0.2 ;
-const MAX_VELOCITY = 1000 ;
-const touchMultiplier = 35 ;
-
-
-window.onload = () => {
-  let cards = [...document.querySelectorAll(".card")];
-  slider = document.querySelector(".circular-slider") ;
-  distribute(cards);
-  window.addEventListener("mousedown",handleMouseDown);
-  window.addEventListener("touchstart",handleTouchStart);
-  window.addEventListener("touchmove",handleTouchMove);
-  window.addEventListener("touchend",handleTouchEnd);
-  window.addEventListener("wheel",throttle(handleWheel,300));
-};
-
-function handleMouseDown(event){
-  cancelAnimation();
-  lastMousePosition = event.clientX ;
-  curMousePosition = event.clientX ;
-  deltaMouse = 0 ;
-  window.addEventListener("mousemove",handleMouseMove);
-  window.addEventListener("mouseup",handleMouseUp);
-}
-
-function handleMouseMove(event){
-  curMousePosition = event.clientX ;
-  let delta = lastMousePosition - curMousePosition;
-  deltaMouse = curMousePosition - lastMousePosition ;
-  lastMousePosition = curMousePosition ;
-  angleOffset += delta * mouseSensitivity ;
-  lastMouseMoveTime = Date.now();
-  setAngleOffset(angleOffset);
-}
-
-function handleMouseUp(){
-  window.removeEventListener("mousemove",handleMouseMove);
-  window.removeEventListener("mouseup",handleMouseUp);
-  meanPosition = roundToFactor(angleOffset,unitAngle) ;
-  velocity = - deltaMouse * 50 * mouseSensitivity ;
-  position = angleOffset ;
-  clock = requestAnimationFrame(spin);
-}
-
-function handleTouchStart(event){
-  cancelAnimation();
-  lastMousePosition = event.touches[0].clientX ;
-  curMousePosition = event.touches[0].clientX ;
-  deltaMouse = 0 ;
-}
-
-function handleTouchMove(event){
-  curMousePosition = event.touches[0].clientX ;
-  let delta = lastMousePosition - curMousePosition;
-  deltaMouse = curMousePosition - lastMousePosition ;
-  lastMousePosition = curMousePosition ;
-  angleOffset += delta * touchSensitivity ;
-  setAngleOffset(angleOffset);
-}
-
-function handleTouchEnd(){
-  meanPosition = roundToFactor(angleOffset,unitAngle) ;
-  velocity = - deltaMouse * touchMultiplier * touchSensitivity ;
-  position = angleOffset ;
-  clock = requestAnimationFrame(spin);
-}
-
-let decayClock = 0;
-
-function throttle(fn, wait) {
-  var time = Date.now();
-  return function(event) {
-    if ((time + wait - Date.now()) < 0) {
-      fn(event);
-      time = Date.now();
-    }
-  }
-}
-
-function handleWheel(event){
-  cancelAnimation();
-  velocity += 100 * Math.sign(event.deltaY) ;
-  clock = requestAnimationFrame(spin);
-}
-
-
-let roundToFactor = (value,factor) => Math.round(value/factor)*factor ;
-
-function distribute(cards) {
-  if(cards.length == 0)
-    return ;
-  let angle = Math.PI*2/cards.length ;
-  unitAngle = 360 / cards.length ;
-  let radius = cards[0].offsetWidth/(2*Math.tan(angle/2)) + 16;
-  slider.style.transformOrigin = `center center ${-radius}px` ;
-  cards.forEach((card,index)=> {
-    let tiltAngle = index*angle ;
-    let deltaZ = radius * (1 - Math.cos(tiltAngle));
-    let deltaY = radius * Math.sin(tiltAngle) ;
-    card.style.transform = `
-            translate3d(${deltaY}px,0px,${-deltaZ}px)
-            rotateY(${tiltAngle*180/Math.PI}deg)
-        ` ;
-  });
-}
-
-function setAngleOffset(newOffset){
-  angleOffset = newOffset ;
-  slider.style.transform = `rotateY(${-angleOffset}deg)` ;
-}
-
-function snap(currentFrameTime){
-  lastFrameTime = lastFrameTime || (currentFrameTime ) ;
-  let deltaTime = (currentFrameTime - lastFrameTime)/1000 ;
-
-  let displacement = position - meanPosition ;
-  let netForce = - displacement * springConstant - velocity*dampingForce ;
-  let acceleration = netForce / sliderMass ;
-  velocity += acceleration * deltaTime ;
-  position += velocity * deltaTime ;
-  angleOffset = position ;
-  setAngleOffset(angleOffset);
-
-  lastFrameTime = currentFrameTime ;
-  if(Math.abs(acceleration) > 0.1 ){
-    clock = requestAnimationFrame(snap);
-  } else {
-    meanPosition = roundToFactor(angleOffset,unitAngle);
-    angleOffset = meanPosition ;
-    lastFrameTime = NaN ;
-    animating = false ;
-  }
-}
-
-function cancelAnimation(){
-  cancelAnimationFrame(clock);
-  lastFrameTime = NaN ;
-}
-
-function spin(currentFrameTime){
-  lastFrameTime = lastFrameTime || (currentFrameTime ) ;
-  let deltaTime = (currentFrameTime - lastFrameTime)/1000 ;
-
-  velocity += Math.sign(velocity) * acceleration * deltaTime ;
-  angleOffset += velocity * deltaTime ;
-  position = angleOffset ;
-  setAngleOffset(angleOffset);
-
-  animating = true ;
-
-  lastFrameTime = currentFrameTime ;
-  if(Math.abs(velocity) > 10){
-    clock = requestAnimationFrame(spin);
-  } else {
-    meanPosition = roundToFactor(angleOffset,unitAngle);
-    position = angleOffset ;
-    lastFrameTime = NaN ;
-    clock = requestAnimationFrame(snap);
-  }
-}
-
-(()=>{
-  var word ;
-  var orignal;
-  var text="";
-  const rotationGap = 4;
-  var clock2 ;
-  var j;
-  var l;
-  var c;
-  var p;
-
-  window.addEventListener("load",() => {
-    word = document.querySelector(".name");
-    orignal = `Good_Bits`;
-    l=orignal.length;
-    j=c=p=0;
-    clock2 = setInterval(shuffle,30);
-  });
-
-  function shuffle(){
-    if(p-->0) return;
-    text="";
-    for(var k=0;k<j;k++) text += orignal[k];
-    for(var k=j;k<j+4 && k<l;k++){
-      text += String.fromCharCode(
-        (Math.random()>0.5)?
-          (Math.floor(Math.random()*26) + 65):
-          (Math.floor(Math.random()*26) + 97)
-      );
-    }
-    c++;
-    if(c==rotationGap){
-      c=0;
-      j += 1;
-    }
-    word.innerText = text ;
-    if(j>=l+1){
-      j=0;
-      c=0;
-      p=100;
-    }
-  }
-})();
   
+$('input').on('change', function() {
+  $('body').toggleClass('blue');
+});
+
   </script>
-<header>
-  <nav>
-
-    <b>
-      <a href="#" class="active">Home</a>
-      <a href="#">Image</a>
-      <a href="#">Audio</a>
-      <a href="#">Video</a>
-      <a href="#">Sign in</a>
-      <input type="checkbox" id="btn" hidden>
-      <label for="btn" class="menu-btn">
-        <i class="fa fa-grav teal-color"></i>
-      </label>
-
-          <h1> <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/> Prosta
-            <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt="logo">
-            Frankkyn <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/>
-          </h1>
-    </b>
-  </nav>
-  <div class="di"></div>
+  <header>
+    <nav>
+      <b>
+        <div class="logo-page">
+          <table style="width:100%"> <tr>
+            <td>
+              <h1>  <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/> Prosta
+                <img src="https://i.postimg.cc/TYSLYd91/IMG-20210714-233047-395.jpg" alt="">
+                Franklyn <img src="https://img.icons8.com/office/80/000000/controller.png" alt=""/>
+              </h1>
+            </td>
+          </tr> </table>
+        </div>
+        <a href="#" class="active">Home</a>
+        <a href="#">Image</a>
+        <a href="#">Audio</a>
+        <a href="#">Video</a>
+        <a href="#">Sign in</a>
+        <input type="checkbox" id="btn" hidden>
+        <label for="btn" class="icon-btn">
+          <i class="fa fa-grav teal-color"></i>
+        </label>
+      </b>
+    </nav>
+    <div class="red-bar"></div>
   </header>
+<section class="wallpapers">
+  <div class="container">
+    <h1>
+      Gamer Stories
+    </h1>
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <div class="cards">
+      <label class="card" for="item-1" id="song-1">
+        <img src="https://i.postimg.cc/DyXHC1k2/dbz.jpg" alt="song"> <br><br> <div class="player">
+        <h4>
+          Helvitca <p>
+          text here...
+        </p>
+        </h4>
+      </div>
 
-<section class="middle" id="middle">
-<div class="wrapper">
-  <div class="circular-slider">
-    <div class="card">
-      <div class="content">
-        <br>
-        Hello World !
+      </label>
+      <label class="card" for="item-2" id="song-2">
+        <img src="https://i.postimg.cc/VL2RVh9T/sasuke.jpg" alt="song"> <br><br> <div class="player">
+        <h4>
+          Helvitca <p>
+          text here...
+        </p>
+        </h4>
       </div>
-    </div>
-    <div class="card">
-      <div class="content">
-         <br>
-        Be Nice !
+      </label>
+      <label class="card" for="item-3" id="song-3">
+        <img src="https://i.postimg.cc/tCt63CRB/joker.png" alt="song"> <br><br> <div class="player">
+        <h4>
+          Helvitca <p>
+          text here...
+        </p>
+        </h4>
       </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <br>
-        Eat well !
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <br>
-        Stay Healthy !
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <br>
-        Shine Bright !
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <br>
-        Be Happy !
-      </div>
+      </label>
     </div>
   </div>
-</div>
+
+  <section class="team" id="team">
+
+    <div class="team-head">
+      <h2>Stories <span></span></h2>
+    </div>
+    <div class="team-content">
+
+      <img src="https://i.postimg.cc/DfWTdhtC/pexels-pixabay-163077.jpg" alt="image">
+      <div class="team-text">
+        <h3>Name</h3>
+        <p>
+          some text some text
+          some text some text
+          some text some text
+          some text some text
+          some text some text.
+
+        </p>
+        <div class="team-icons">
+          <i href="#" class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="team-content">
+      <img src="https://i.postimg.cc/cL02jGbG/pexels-aline-viana-prado-3491940.jpg" alt="image">
+      <div class="team-text">
+        <h3>Name</h3>
+        <p>
+          some text some text
+          some text some text
+          some text some text
+          some text some text
+          some text some text.
+
+        </p>
+        <div class="team-icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="team-content">
+      <img src="https://i.postimg.cc/0NrWRkGF/star-wars-darth-vader-1024x768-wallpaper-www-wallpaperhi-com-71.jpg" alt="image">
+      <div class="team-text">
+        <h3>Name</h3>
+        <p>
+          some text some text
+          some text some text
+          some text some text
+          some text some text
+          some text some text.
+
+        </p>
+        <div class="team-icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </section>
 
-<section class="team" id="team">
-
-<div class="team-head">
-  <h2>Stories <span></span></h2>
-</div>
-<div class="team-content">
-
-  <img src="https://i.postimg.cc/DfWTdhtC/pexels-pixabay-163077.jpg" alt="image">
-  <div class="team-text">
-    <h3>Name</h3>
-    <p>
-      some text some text
-      some text some text
-      some text some text
-      some text some text
-      some text some text.
-
-    </p>
-    <div class="team-icons">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-twitter"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-linkedin"></i>
-    </div>
-
-  </div>
-</div>
-
-
-
-<div class="team-content">
-  <img src="https://i.postimg.cc/cL02jGbG/pexels-aline-viana-prado-3491940.jpg" alt="image">
-  <div class="team-text">
-    <h3>Name</h3>
-    <p>
-      some text some text
-      some text some text
-      some text some text
-      some text some text
-      some text some text.
-
-    </p>
-    <div class="team-icons">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-twitter"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-linkedin"></i>
+  <div class="footer">
+    <div class="social">
+      <a href=""><img src="https://i.postimg.cc/1XHcF7b3/fb.png" height="30px" width="30px" alt=""></a>
+      <a href=""><img src="https://i.postimg.cc/RhF2pYKN/github.png" height="30px" width="30px" alt=""></a>
+      <a href=""><img src="https://i.postimg.cc/tR8HmXvb/instagram.png" height="30px" width="30px" alt=""></a>
+      <a href=""><img src="https://i.postimg.cc/mZCdBB2B/discord.png" height="30px" width="30px" alt=""></a>
     </div>
   </div>
-</div>
-
-
-<div class="team-content">
-  <img src="https://i.postimg.cc/0NrWRkGF/star-wars-darth-vader-1024x768-wallpaper-www-wallpaperhi-com-71.jpg" alt="image">
-  <div class="team-text">
-    <h3>Name</h3>
-    <p>
-      some text some text
-      some text some text
-      some text some text
-      some text some text
-      some text some text.
-
-    </p>
-    <div class="team-icons">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-twitter"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-linkedin"></i>
-    </div>
-  </div>
-</div>
-</section>
-
-<div class="footer">
-  <div class="social">
-    <a href=""><img src="https://i.postimg.cc/1XHcF7b3/fb.png" height="30px" width="30px" alt=""></a>
-    <a href=""><img src="https://i.postimg.cc/RhF2pYKN/github.png" height="30px" width="30px" alt=""></a>
-    <a href=""><img src="https://i.postimg.cc/tR8HmXvb/instagram.png" height="30px" width="30px" alt=""></a>
-    <a href=""><img src="https://i.postimg.cc/mZCdBB2B/discord.png" height="30px" width="30px" alt=""></a>
-  </div>
-</div>
-
 </body>
 </html>
